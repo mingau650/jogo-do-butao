@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não Aperte o Botão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="container" id="mainContainer">
+        <div class="header">
+            <h1>O BOTÃO VERMELHO</h1>
+            <p class="subtitle">Por favor... não aperte.</p>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-label">Tempo Juntos</div>
+                <div class="stat-value" id="timeCounter">0:00</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Confiança</div>
+                <div class="stat-value heartbeat" id="trustLevel">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Segredos Compartilhados</div>
+                <div class="stat-value" id="secretsCount">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Memórias Criadas</div>
+                <div class="stat-value" id="gamesWon">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Nossa Amizade</div>
+                <div class="stat-value" id="friendshipLevel">Desconhecidos</div>
+            </div>
+        </div>
+
+        <div class="hint-section" id="hintSection">
+            💡 <span id="hintText"></span>
+        </div>
+
+        <div class="code-input-section" id="codeInputSection">
+            <h3>🔐 Você descobriu algo especial...</h3>
+            <p style="color: #ccc; margin-bottom: 15px;">Digite o código que você encontrou:</p>
+            <input type="text" class="code-input" id="codeInput" placeholder="?????" maxlength="10">
+            <p style="color: #666; font-size: 0.85em; margin-top: 10px;">Dica: Procure nas mensagens...</p>
+        </div>
+
+        <div class="main-area">
+            <div class="button-section">
+                <div class="red-button" id="redButton"></div>
+                <div class="button-warning" id="buttonWarning">
+                    NÃO APERTE O BOTÃO
+                </div>
+            </div>
+
+            <div class="chat-box" id="chatBox">
+                <div class="message">
+                    <div class="narrator-name">???</div>
+                    <div class="timestamp">00:00</div>
+                    <div>Por favor... você não entende o que vai acontecer se apertar esse botão.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="secrets-panel" id="secretsPanel" style="display: none;">
+            <h2>📜 Nossos Segredos</h2>
+            <div id="secretsList"></div>
+        </div>
+
+        <div class="achievements" id="achievementsPanel" style="display: none;">
+            <h2>🏆 Nossa Jornada Juntos</h2>
+            <div id="achievementsList"></div>
+        </div>
+
+        <div class="minigame-section" id="minigameSection">
+            <h2 id="minigameTitle"></h2>
+            <div id="minigameContent"></div>
+        </div>
+    </div>
+
+    <!-- PARADISE ROOM -->
+    <div class="paradise-room" id="paradiseRoom">
+        <div class="sky"></div>
+        <div class="clouds" id="cloudsContainer"></div>
+        <div class="sun"></div>
+        <div class="grass" id="grassContainer"></div>
+        <div class="ground"></div>
+        <div id="treesContainer"></div>
+        <div class="flowers" id="flowersContainer"></div>
+        <div id="butterfliesContainer"></div>
+        
+        <div class="paradise-button-container">
+            <div class="paradise-button" id="paradiseButton"></div>
+        </div>
+
+        <div class="speech-bubble" id="paradiseBubble" style="bottom: 60%; left: 50%; transform: translateX(-50%);">
+            Olá, amigo...
+        </div>
+    </div>
+
+    <div class="ending-screen" id="endingScreen">
+        <div class="ending-content">
+            <h1 id="endingTitle">VOCÊ APERTOU</h1>
+            <p id="endingMessage"></p>
+            <div id="bloodContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "name": "jogo-do-butao",
+  "version": "1.0.0",
+  "description": "Um jogo emocional e interativo sobre conexão, solidão e escolhas - não aperte o botão vermelho",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "dev": "live-server --port=3000 --open=/index.html --watch=.",
+    "serve": "python -m http.server 8000",
+    "serve-php": "php -S localhost:8000"
+  },
+  "keywords": [
+    "game",
+    "interactive",
+    "emotional",
+    "browser-game",
+    "javascript",
+    "html5",
+    "narrative"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/nao-aperte-o-botao.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seu-usuario/nao-aperte-o-botao/issues"
+  },
+  "homepage": "https://github.com/seu-usuario/nao-aperte-o-botao#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
